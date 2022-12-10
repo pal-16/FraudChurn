@@ -1,0 +1,44 @@
+<html>
+<head>
+
+    <script>
+
+        const url="https://www.google.com";
+        async function makeAPI(){
+         
+            const response = await fetch(url);
+            const data = await response.json();
+            console.log(data);
+        }
+    </script>
+
+</head>
+<body>
+    <form action="http://www.foo.com" method="GET">
+        <div>
+          <label for="accountid">Account ID</label>
+          <input name="accountid" id="accountid"/>
+        </div>
+        <div>
+          <label for="districtid">District ID</label>
+          <input name="districtid" id="districtid"  />
+        </div>
+        <div>
+            <label for="orderid">orderid</label>
+            <input name="orderid" id="orderid"  />
+        </div>
+          <div>
+            <label for="accountto">Account to</label>
+            <input name="accountto" id="accountto"/>
+          </div>   
+          <div>
+            <label for="bankto">Bank to</label>
+            <input name="bankto" id="bankto" />
+          </div>
+        <div>
+          <button>Predict</button>
+        </div>
+      </form>
+ 
+</body> 
+</html>
